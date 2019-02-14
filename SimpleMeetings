@@ -1,0 +1,20 @@
+x=input("Number of meeting attendants")
+print(' \nYou are each numbered starting from the person left to the launcher of Simple Meetings\n')
+int_x=int(x)
+
+r=range(1,int_x+1)
+L=list(r)
+import random
+
+a=random.choice(L)
+L.remove(a)
+b=random.choice(L)
+L.remove(b)
+c=random.choice(L)
+
+bold = '\033[1m'
+reset = '\033[0;0m'
+
+print('\033[1m'+str(a)+' is Time Keeper'+'\033[0;0m'+' - Keep it moving')
+print('\033[1m'+str(b)+' is Decision Pusher'+'\033[0;0m'+' - Stay on topic')
+print('\033[1m'+str(c)+' is Observer'+'\033[0;0m'+' - Create a Minutes entry on OneNote')
