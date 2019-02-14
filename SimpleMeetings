@@ -1,3 +1,4 @@
+print('\n')
 n=input('Please enter name of meeting organiser : ')
 x=input('Number of meeting participants : ')
 print(' \nYou are each numbered from 1 to '+str(x)+' starting on '+str(n)+'\'s left.\n')
@@ -13,9 +14,6 @@ b=random.choice(L)
 L.remove(b)
 c=random.choice(L)
 
-bold = '\033[1m'
-reset = '\033[0;0m'
-
-print('\033[1m'+str(a)+' is Time Keeper'+'\033[0;0m'+' - Keep it moving')
-print('\033[1m'+str(b)+' is Decision Pusher'+'\033[0;0m'+' - Stay on topic')
-print('\033[1m'+str(c)+' is Observer'+'\033[0;0m'+' - Create a Minutes entry in OneNote\n')
+print('\033[1;31m'+str(a)+' is Time Keeper'+'\033[0;0m'+' - Keep it moving')
+print('\033[1;31m'+str(b)+' is Decision Pusher'+'\033[0;0m'+' - Stay on topic')
+print('\033[1;31m'+str(c)+' is Observer'+'\033[0;0m'+' - Create a Minutes entry in OneNote\n')
