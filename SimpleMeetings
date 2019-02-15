@@ -15,7 +15,8 @@ L.remove(b)
 c=random.choice(L)
 
 import colorama
-from colorama import Fore, Style
+from colorama import init, Fore, Style
+init(convert=True)
 
 print(Fore.RED+str(a)+' is Time Keeper'+Style.RESET_ALL+' - Keep it moving')
 print(Fore.RED+str(b)+' is Decision Pusher'+Style.RESET_ALL+' - Stay on topic')
