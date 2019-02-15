@@ -1,6 +1,4 @@
-print('\n')
-n=input('Please enter name of meeting organiser : ')
-x=input('Number of meeting participants : ')
+nput('Number of meeting participants : ')
 print(' \nYou are each numbered from 1 to '+str(x)+' starting on '+str(n)+'\'s left.\n')
 int_x=int(x)
 
@@ -14,7 +12,11 @@ b=random.choice(L)
 L.remove(b)
 c=random.choice(L)
 
-print('\033[1;31m'+str(a)+' is Time Keeper'+'\033[0;0m'+' - Keep it moving')
-print('\033[1;31m'+str(b)+' is Decision Pusher'+'\033[0;0m'+' - Stay on topic')
-print('\033[1;31m'+str(c)+' is Observer'+'\033[0;0m'+' - Create a Minutes entry in OneNote\n')
+import colorama
+from colorama import Fore, Style
+
+print(Fore.RED+str(a)+' is Time Keeper'+Style.RESET_ALL+' - Keep it moving')
+print(Fore.RED+str(b)+' is Decision Pusher'+Style.RESET_ALL+' - Stay on topic')
+print(Fore.RED+str(c)+' is Observer'+Style.RESET_ALL+' - Create a Minutes entry in OneNote\n')
+
 exit=input('Hit \'enter\' to exit')
