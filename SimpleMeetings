@@ -18,8 +18,8 @@ import colorama
 from colorama import init, Fore, Style
 init(convert=True)
 
-print(Fore.RED+str(a)+' is Time Keeper'+Style.RESET_ALL+' - Keep it moving')
-print(Fore.RED+str(b)+' is Decision Pusher'+Style.RESET_ALL+' - Stay on topic')
-print(Fore.RED+str(c)+' is Observer'+Style.RESET_ALL+' - Create a Minutes entry in OneNote\n')
+print(Fore.GREEN+Style.BRIGHT+str(a)+' is Time Keeper'+Style.RESET_ALL+' - Keep it moving')
+print(Fore.GREEN+Style.BRIGHT+str(b)+' is Decision Pusher'+Style.RESET_ALL+' - Stay on topic')
+print(Fore.GREEN+Style.BRIGHT+str(c)+' is Observer'+Style.RESET_ALL+' - Create a Minutes entry in OneNote\n')
 
 exit=input('Hit \'enter\' to exit')
