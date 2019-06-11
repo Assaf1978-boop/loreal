@@ -1,0 +1,55 @@
+print('\n')
+n=input('Please enter name of meeting owner : ')
+x=input('Number of meeting participants : ')
+int_x=int(x)
+
+import random
+import colorama
+from colorama import init, Fore, Style
+init(convert=True)
+
+r=range(1,int_x+1)
+L=list(r)
+
+if int_x>=5:
+    a=int_x
+    L.remove(a)
+    b=random.choice(L)
+    L.remove(b)
+    c=random.choice(L)
+    L.remove(c)
+    d = random.choice(L)
+    L.remove(d)
+    e = random.choice(L)
+
+    print(' \nYou are each numbered from 1 to ' + str(x) + ' starting on ' + str(n) + '\'s left.\n')
+    print(Fore.GREEN+Style.BRIGHT+str(a)+' is Meeting Owner'+Style.RESET_ALL+' - Manage the agenda')
+    print(Fore.GREEN+Style.BRIGHT+str(b)+' is Decision Pusher'+Style.RESET_ALL+' - Provoke decision-making')
+    print(Fore.GREEN+Style.BRIGHT+str(c)+' is Minutes Taker'+Style.RESET_ALL+' - Create a Minutes entry in OneNote')
+    print(Fore.GREEN+Style.BRIGHT+str(d)+' is Time Keeper'+Style.RESET_ALL+' - Keep it moving')
+    print(Fore.GREEN+Style.BRIGHT+str(e)+' is Observer'+Style.RESET_ALL+' - Give meeting feedback\n')
+
+    exit=input('Hit \'enter\' to exit')
+
+elif int_x==4:
+    a=int_x
+    L.remove(a)
+    b=random.choice(L)
+    L.remove(b)
+    c=random.choice(L)
+    L.remove(c)
+    d = random.choice(L)
+
+    print(' \nYou are each numbered from 1 to ' + str(x) + ' starting on ' + str(n) + '\'s left.\n')
+    print(Fore.GREEN+Style.BRIGHT+str(a)+' is Meeting Owner'+Style.RESET_ALL+' - Manage the agenda')
+    print(Fore.GREEN+Style.BRIGHT+str(b)+' is Decision Pusher'+Style.RESET_ALL+' - Provoke decision-making')
+    print(Fore.GREEN+Style.BRIGHT+str(c)+' is Minutes Taker'+Style.RESET_ALL+' - Create a Minutes entry in OneNote')
+    print(Fore.GREEN+Style.BRIGHT+str(d)+' is Time Keeper'+Style.RESET_ALL+' - Keep it moving\n')
+
+    exit=input('Hit \'enter\' to exit')
+
+else:
+
+    print(Fore.RED + Style.BRIGHT + '\nMinimum of 4 participants required\n')
+
+    exit = input('Hit \'enter\' to exit')
