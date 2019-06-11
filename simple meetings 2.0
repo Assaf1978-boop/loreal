@@ -23,11 +23,11 @@ if int_x>=5:
     e = random.choice(L)
 
     print(' \nYou are each numbered from 1 to ' + str(x) + ' starting on ' + str(n) + '\'s left.\n')
-    print(Fore.GREEN+Style.BRIGHT+str(a)+' is Meeting Owner'+Style.RESET_ALL+' - Manage the agenda')
-    print(Fore.GREEN+Style.BRIGHT+str(b)+' is Decision Pusher'+Style.RESET_ALL+' - Provoke decision-making')
-    print(Fore.GREEN+Style.BRIGHT+str(c)+' is Minutes Taker'+Style.RESET_ALL+' - Create a minutes entry in OneNote')
-    print(Fore.GREEN+Style.BRIGHT+str(d)+' is Time Keeper'+Style.RESET_ALL+' - Keep it moving')
-    print(Fore.GREEN+Style.BRIGHT+str(e)+' is Observer'+Style.RESET_ALL+' - Give meeting feedback\n')
+    print(Fore.GREEN+Style.BRIGHT+' '+str(a)+' is Meeting Owner'+Style.RESET_ALL+' - Manage the agenda')
+    print(Fore.GREEN+Style.BRIGHT+' '+str(b)+' is Decision Pusher'+Style.RESET_ALL+' - Provoke decision-making')
+    print(Fore.GREEN+Style.BRIGHT+' '+str(c)+' is Minutes Taker'+Style.RESET_ALL+' - Create a minutes entry in OneNote')
+    print(Fore.GREEN+Style.BRIGHT+' '+str(d)+' is Time Keeper'+Style.RESET_ALL+' - Keep it moving')
+    print(Fore.GREEN+Style.BRIGHT+' '+str(e)+' is Observer'+Style.RESET_ALL+' - Give meeting feedback\n')
 
     exit=input('Hit \'enter\' to exit')
 
@@ -41,10 +41,10 @@ elif int_x==4:
     d = random.choice(L)
 
     print(' \nYou are each numbered from 1 to ' + str(x) + ' starting on ' + str(n) + '\'s left.\n')
-    print(Fore.GREEN+Style.BRIGHT+str(a)+' is Meeting Owner'+Style.RESET_ALL+' - Manage the agenda')
-    print(Fore.GREEN+Style.BRIGHT+str(b)+' is Decision Pusher'+Style.RESET_ALL+' - Provoke decision-making')
-    print(Fore.GREEN+Style.BRIGHT+str(c)+' is Minutes Taker'+Style.RESET_ALL+' - Create a minutes entry in OneNote')
-    print(Fore.GREEN+Style.BRIGHT+str(d)+' is Time Keeper'+Style.RESET_ALL+' - Keep it moving\n')
+    print(Fore.GREEN+Style.BRIGHT+' '+str(a)+' is Meeting Owner'+Style.RESET_ALL+' - Manage the agenda')
+    print(Fore.GREEN+Style.BRIGHT+' '+str(b)+' is Decision Pusher'+Style.RESET_ALL+' - Provoke decision-making')
+    print(Fore.GREEN+Style.BRIGHT+' '+str(c)+' is Minutes Taker'+Style.RESET_ALL+' - Create a minutes entry in OneNote')
+    print(Fore.GREEN+Style.BRIGHT+' '+str(d)+' is Time Keeper'+Style.RESET_ALL+' - Keep it moving\n')
 
     exit=input('Hit \'enter\' to exit')
 
